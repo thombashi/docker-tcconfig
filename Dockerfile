@@ -1,4 +1,4 @@
-FROM python:3.6-slim-stretch
+FROM python:3.7-slim-stretch
 LABEL maintainer="Tsuyoshi Hombashi <tsuyoshi.hombashi@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     iptables \
     iputils-ping \
     && rm -rf /var/lib/apt/lists/* \
-    && pip install tcconfig==0.21.0 netifaces
+    && pip install tcconfig==0.21.1 netifaces
 
 ENTRYPOINT ["/bin/bash"]
