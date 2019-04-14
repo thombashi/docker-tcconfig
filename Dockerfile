@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     iptables \
     iputils-ping \
     && rm -rf /var/lib/apt/lists/* \
-    && pip install tcconfig==0.22.1
+    && pip install tcconfig==0.22.2
 
 ENTRYPOINT ["/bin/bash"]
