@@ -6,13 +6,14 @@ Docker image for [tcconfig]( https://github.com/thombashi/tcconfig )
 ```
 docker pull thombashi/tcconfig
 
-docker run -d --cap-add NET_ADMIN -t thombashi/tcconfig
+docker run -d --cap-add NET_ADMIN -t thombashi/tcconfig [tcset options]
 ```
 
 
 # Built-in Packages
-- iperf
-- iputils-ping
+- `iperf`
+- `iproute2`
+- `iputils-ping`
 - [tcconfig]( https://github.com/thombashi/tcconfig )
 
 
