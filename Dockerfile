@@ -9,4 +9,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && pip install tcconfig==0.23.0
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["tcset", "eth0"]
+CMD ["-h"]
